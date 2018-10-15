@@ -1,8 +1,8 @@
 (function(window, factory) {
 	if(typeof module == 'object' && module.exports){
-		module.exports = lazySizes;
+		module.exports = onespotLazySizes;
 	} else {
-		window.lazySizes = factory(window, window.document);
+		window.onespotLazySizes = factory(window, window.document);
 	}
 }(window, function l(window, document) {
 	'use strict';
@@ -513,7 +513,7 @@
 			expand: 400,
 		};
 
-		lazySizesConfig = window.lazySizesConfig || window.lazysizesConfig || {};
+		lazySizesConfig = window.onespotLazySizesConfig || {};
 
 		for(prop in lazySizesDefaults){
 			if(!(prop in lazySizesConfig)){
@@ -521,7 +521,7 @@
 			}
 		}
 
-		window.lazySizesConfig = lazySizesConfig;
+		window.onespotLazySizesConfig = lazySizesConfig;
 
 		setTimeout(function(){
 			if(lazySizesConfig.init){

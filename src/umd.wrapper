@@ -1,10 +1,10 @@
 (function(window, factory) {
-	var lazySizes = factory(window, window.document);
+	var onespotLazySizes = factory(window, window.document);
 	if(typeof module == 'object' && module.exports){
-		module.exports = lazySizes;
+		module.exports = onespotLazySizes;
 	} else if (typeof define == 'function' && define.amd) {
-		define(lazySizes);
+		define(onespotLazySizes);
 	} else {
-		window.lazySizes = lazySizes;
+		window.onespotLazySizes = onespotLazySizes;
 	}
 }(window, {{ls}}));
