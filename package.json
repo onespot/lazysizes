@@ -1,16 +1,16 @@
 {
-  "name": "lazysizes",
-  "version": "4.1.4",
-  "filename": "lazysizes.min.js",
+  "name": "onespot-lazysizes",
+  "version": "0.0.1",
+  "filename": "onespot-lazysizes.min.js",
   "license": "MIT",
-  "author": "Alexander Farkas <info@corrupt-system.de>",
+  "author": "OneSpot",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aFarkas/lazysizes.git"
+    "url": "git@github.com:onespot/onespot-lazysizes.git"
   },
-  "namespace": "lazySizes",
-  "main": "lazysizes.js",
-  "browser": "lazysizes.js",
+  "namespace": "onespot-lazySizes",
+  "main": "onespot-lazysizes.js",
+  "browser": "onespot-lazysizes.js",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-bytesize": "~0.1.1",
@@ -28,38 +28,16 @@
     "qunitjs": "^1.17.0",
     "respimage": "^1.4.2"
   },
-  "npmName": "lazysizes",
+  "npmName": "onespot-lazysizes",
   "npmFileMap": [
     {
       "basePath": "",
       "files": [
-        "lazysizes.min.js",
+        "onespot-lazysizes.min.js",
         "plugins/**/*.min.js"
       ]
     }
   ],
   "description": "High performance (jankfree) lazy loader for images (including responsive images), iframes and scripts (widgets).",
-  "keywords": [
-    "lazy",
-    "loader",
-    "lazyloader",
-    "lazyload",
-    "lazySizes",
-    "performance",
-    "responsive",
-    "image",
-    "images",
-    "responsive images",
-    "picture",
-    "srcset",
-    "respimg",
-    "respimage",
-    "include",
-    "ajax",
-    "img",
-    "imager",
-    "imager.js",
-    "picturefill",
-    "component"
-  ]
+  "keywords": []
 }

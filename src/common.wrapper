@@ -1,7 +1,7 @@
 (function(window, factory) {
-	var lazySizes = factory(window, window.document);
-	window.lazySizes = lazySizes;
+	var onespotLazySizes = factory(window, window.document);
+	window.onespotLazySizes = onespotLazySizes;
 	if(typeof module == 'object' && module.exports){
-		module.exports = lazySizes;
+		module.exports = onespotLazySizes;
 	}
 }(window, {{ls}}));

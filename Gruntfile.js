@@ -33,7 +33,7 @@
 						{
 							expand: true,
 							cwd: '',
-							src: ['lazysizes*.js', '!*.min.js'],
+							src: ['onespot-lazysizes*.js', '!*.min.js'],
 							dest: '',
 							ext: '.min.js',
 							extDot: 'last'
@@ -46,13 +46,13 @@
 					options: {
 						jshintrc: true
 					},
-					src: [ "lazysizes.js", "plugins/**/*.js", "!*.min.js", "!plugins/**/*.min.js" ] //, "Gruntfile.js", "tests/*.js"
+					src: [ "onespot-lazysizes.js", "plugins/**/*.js", "!*.min.js", "!plugins/**/*.min.js" ] //, "Gruntfile.js", "tests/*.js"
 				}
 			},
 			plato: {
 				all: {
 					files: {
-						"plato-report/": ["lazysizes.js", "plugins/**/*.js", "!*.min.js", "!plugins/**/*.min.js"]
+						"plato-report/": ["onespot-lazysizes.js", "plugins/**/*.js", "!*.min.js", "!plugins/**/*.min.js"]
 					}
 				}
 			},
@@ -61,13 +61,13 @@
 			},
 			watch: {
 				gruntfile: {
-					files: [ "Gruntfile.js", "lazysizes.js" ],
+					files: [ "Gruntfile.js", "onespot-lazysizes.js" ],
 					tasks: [ "default" ]
 				}
 			},
 			bytesize: {
 				all: {
-					src: [ "lazysizes.min.js" ]
+					src: [ "onespot-lazysizes.min.js" ]
 				}
 			},
 			uncss: {
@@ -85,7 +85,7 @@
 					options: {
 						maxBytes: (1024 * 6.8)
 					},
-					src: ["lazysizes.min.js"]
+					src: ["onespot-lazysizes.min.js"]
 				}
 			}
 		});
@@ -101,12 +101,12 @@
 		grunt.loadNpmTasks('grunt-contrib-qunit');
 
 		grunt.registerTask('wrapcore', 'wraps lazysizes into umd and common wrapper.', function() {
-			var ls = grunt.file.read('src/lazysizes-core.js');
+			var ls = grunt.file.read('src/onespot-lazysizes-core.js');
 			var common = grunt.file.read('src/common.wrapper');
 			var umd = grunt.file.read('src/umd.wrapper');
 
-			grunt.file.write('lazysizes.js', common.replace('{{ls}}', ls));
-			grunt.file.write('lazysizes-umd.js', umd.replace('{{ls}}', ls));
+			grunt.file.write('onespot-lazysizes.js', common.replace('{{ls}}', ls));
+			grunt.file.write('onespot-lazysizes-umd.js', umd.replace('{{ls}}', ls));
 		});
 
 
